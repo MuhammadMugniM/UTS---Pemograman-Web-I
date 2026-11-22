@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrasi Pilot — SkyWing Aeromodelling</title>
+  <script src="js/tailwind-browser.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/design.css" />
+</head>
+<body class="min-h-screen flex flex-col bg-[#070b12] text-slate-100 font-sans antialiased">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur-md">
+    <div class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-orange-500 text-slate-950 flex items-center justify-center font-mono font-bold text-base border border-orange-400">
+          SW
+        </div>
+        <span class="text-lg font-display font-bold text-white group-hover:text-orange-400 transition-colors">
+          SkyWing Aeromodelling
+        </span>
+      </a>
+      <a href="login.html" class="text-xs font-mono text-slate-400 hover:text-white transition-colors">
+        Sudah punya akun? Masuk →
+      </a>
+    </div>
+  </header>
+
+  
+  <main class="flex-grow flex items-center justify-center px-4 py-16 bg-blueprint-grid">
+    <div class="w-full max-w-md">
+      <div class="bg-slate-900/95 border border-slate-800 p-8 sm:p-10 shadow-2xl">
+        <span class="text-xs font-mono text-sky-400 font-bold tracking-wider">NEW PILOT ENROLLMENT // BANDUNG</span>
+        <h1 class="mt-2 text-2xl font-display font-bold text-white">Registrasi Anggota SkyWing</h1>
+        <p class="mt-1.5 text-sm text-slate-400 leading-relaxed">
+          Daftarkan akun untuk bergabung dalam sesi terbang mingguan dan kursus aeromodelling.
+        </p>
+
+        <!-- Box Alert Validasi -->
+        <div id="register-alert" class="hidden mt-5 p-3.5 text-xs font-mono border"></div>
+
+        <form id="register-form" class="mt-6 space-y-4" novalidate>
+          <div>
+            <label for="nama" class="block text-xs font-mono text-slate-300 mb-1.5">NAMA LENGKAP</label>
+            <input
+              id="nama"
+              type="text"
+              placeholder="Contoh: Raka Pratama"
+              class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-xs font-mono text-slate-300 mb-1.5">ALAMAT EMAIL</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="raka@domain.com"
+              class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="password" class="block text-xs font-mono text-slate-300 mb-1.5">
+              PASSWORD (MIN. 6 KARAKTER)
+            </label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Minimal 6 karakter"
+              class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="confirm-password" class="block text-xs font-mono text-slate-300 mb-1.5">
+              KONFIRMASI PASSWORD
+            </label>
+            <input
+              id="confirm-password"
+              type="password"
+              placeholder="Ulangi password"
+              class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-3 bg-orange-500 hover:bg-orange-400 text-slate-950 font-mono font-bold text-xs uppercase tracking-wider cursor-pointer transition-all mt-2"
+          >
+            Daftarkan Akun Pilot →
+          </button>
+        </form>
+
+        <p class="mt-6 pt-5 border-t border-slate-800 text-center text-xs text-slate-400">
+          Sudah terdaftar sebagai anggota?
+          <a href="login.html" class="text-sky-400 hover:underline font-mono font-semibold ml-1">
+            Halaman Login
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 px-4 sm:px-8 lg:px-12">
+    <div class="max-w-[1560px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="flex items-center gap-2 font-mono">
+        <span class="w-2 h-2 bg-orange-500"></span>
+        <span>SkyWing Aeromodelling — Bandung</span>
+      </div>
+      <p class="font-mono text-slate-300 text-center">
+        @Copyright by 24552011240_Muhammad Mugni Mahbub_TIF RP 24E CNS
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

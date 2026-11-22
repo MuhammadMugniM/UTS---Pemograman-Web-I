@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spesifikasi Pesawat — SkyWing Aeromodelling</title>
+  <script src="js/tailwind-browser.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/design.css" />
+</head>
+<body class="min-h-screen flex flex-col bg-[#070b12] text-slate-100 font-sans antialiased">
+
+  <!-- Header Navigation -->
+  <header class="bg-[#070b12]/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <nav class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-orange-500 text-slate-950 flex items-center justify-center font-mono font-bold text-base border border-orange-400">
+          SW
+        </div>
+        <div>
+          <span class="block text-lg font-display font-bold text-white group-hover:text-orange-400 transition-colors">
+            SkyWing Aeromodelling
+          </span>
+          <span class="block text-[11px] font-mono text-slate-400">
+            TECHNICAL AIRFRAME DOSSIER
+          </span>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <a
+          href="index.html#koleksi"
+          class="px-4 py-2 text-xs font-mono border border-slate-700 hover:border-orange-400 text-slate-200 hover:text-white transition-colors"
+        >
+          ← Kembali ke Katalog
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  
+  <main class="flex-grow max-w-[1560px] w-full mx-auto px-4 sm:px-8 lg:px-12 py-12 bg-blueprint-grid">
+    <!-- Konten Detail -->
+    <div id="detail-content"></div>
+
+    <!-- Pesawat Terkait -->
+    <section id="similar-section" class="mt-16 pt-12 border-t border-slate-800 hidden">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="text-xs font-mono text-orange-400 font-bold uppercase tracking-wider block mb-1">
+            REKOMENDASI HANGGAR
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-display font-bold text-white">
+            Pesawat lain yang mirip
+          </h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400 hidden sm:inline">
+          REKOMENDASI HANGGAR
+        </span>
+      </div>
+      <div id="similar-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 px-4 sm:px-8 lg:px-12 mt-auto">
+    <div class="max-w-[1560px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="flex items-center gap-2 font-mono">
+        <span class="w-2 h-2 bg-orange-500"></span>
+        <span>SkyWing Aeromodelling — Bandung</span>
+      </div>
+      <p class="font-mono text-slate-300 text-center">
+        @Copyright by 24552011240_Muhammad Mugni Mahbub_TIF RP 24E CNS
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

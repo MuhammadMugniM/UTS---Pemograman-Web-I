@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nama": "SkyTrainer Cessna 182",
+    "kategori": "Trainer",
+    "level": "Pemula",
+    "wingspan": "1400 mm",
+    "panjang": "1100 mm",
+    "berat": "1250 g",
+    "motor": "Brushless 2212 1400KV",
+    "baterai": "3S 2200mAh",
+    "durasi": "12 menit",
+    "harga": 2450000,
+    "deskripsi": "Pesawat RC sayap tinggi (high-wing) dengan konstruksi EPO foam tahan benturan dan karakter terbang ekstra stabil untuk latihan dasar take-off serta landing.",
+    "fitur": [
+      "Flight controller gyro 6-axis dengan mode auto-leveling untuk pemula",
+      "Material busa EPO kepadatan tinggi yang mudah diperbaiki",
+      "Roda pendaratan tricycle baja pegas tahan hentakan keras",
+      "Paket komplit siap terbang (RTF) termasuk remote 6-channel 2.4GHz"
+    ]
+  },
+  {
+    "id": 2,
+    "nama": "P-51 Mustang Warbird",
+    "kategori": "Warbird",
+    "level": "Menengah",
+    "wingspan": "1200 mm",
+    "panjang": "1050 mm",
+    "berat": "1450 g",
+    "motor": "3536 1100KV",
+    "baterai": "4S 2600mAh",
+    "durasi": "10 menit",
+    "harga": 3850000,
+    "deskripsi": "Replika skala tempur Perang Dunia II dengan proporsi aerodinamis presisi, baling-baling 4-bilah skala, dan performa manuver kecepatan menengah-tinggi.",
+    "fitur": [
+      "Sistem roda pendaratan elektrik lipat otomatis (electric retract)",
+      "Flap fungsional dua tahap untuk pendaratan pendek yang presisi",
+      "Lampu navigasi LED sayap dan detail kokpit pilot skala penuh",
+      "ESC 40A Hobbywing dengan respon throttle linear"
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "F-16 Fighting Falcon EDF Jet",
+    "kategori": "EDF Jet",
+    "level": "Mahir",
+    "wingspan": "900 mm",
+    "panjang": "1100 mm",
+    "berat": "1650 g",
+    "motor": "EDF 70mm 3000KV",
+    "baterai": "4S 3300mAh",
+    "durasi": "7 menit",
+    "harga": 4950000,
+    "deskripsi": "Jet elektrik ducted fan 70mm 12-blade dengan suara deru menyerupai turbin asli dan kecepatan jelajah ekstrem untuk pilot berpengalaman.",
+    "fitur": [
+      "Unit impeller EDF 70mm 12-bilah dengan suara turbin realistis",
+      "Struktur sayap diperkuat batang serat karbon (carbon fiber tube)",
+      "Servo digital metal-gear 9g di seluruh bidang kendali",
+      "Nose cone magnetik lepas-pasang untuk akses kompartemen baterai cepat"
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "SkyGlider Thermal 2M",
+    "kategori": "Glider",
+    "level": "Pemula",
+    "wingspan": "2000 mm",
+    "panjang": "1150 mm",
+    "berat": "950 g",
+    "motor": "2212 1000KV",
+    "baterai": "3S 1800mAh",
+    "durasi": "25 menit",
+    "harga": 2950000,
+    "deskripsi": "Sailplane bentang sayap 2 meter yang dirancang khusus untuk memanfaatkan arus termal udara Bandung dengan waktu terbang hingga 25 menit sekali lepas landas.",
+    "fitur": [
+      "Propeller lipat otomatis (folding prop) untuk meminimalkan hambatan angin",
+      "Sayap dua bagian dengan pengunci cepat tanpa lem untuk kemudahan transportasi",
+      "Rasio luncur (glide ratio) tinggi untuk terbang santai hemat daya",
+      "Ruang kanopi luas yang mendukung pemasangan modul kamera udara ringan"
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Extra 300 3D Aerobatic",
+    "kategori": "3D Aerobatic",
+    "level": "Mahir",
+    "wingspan": "1300 mm",
+    "panjang": "1250 mm",
+    "berat": "2100 g",
+    "motor": "3542 900KV",
+    "baterai": "6S 3300mAh",
+    "durasi": "9 menit",
+    "harga": 5750000,
+    "deskripsi": "Pesawat aerobatik kompetisi dengan rasio thrust-to-weight 1.6:1 yang sanggup melakukan manuver ekstrem seperti torque roll, harrier, dan knife-edge.",
+    "fitur": [
+      "Konstruksi balsa-plywood berlapis EPO ringan berdaya tahan G-force tinggi",
+      "Sudut defleksi permukaan kontrol ekstra lebar hingga 45 derajat",
+      "Landing gear serat karbon murni dengan wheel pants aerodinamis",
+      "Sistem tenaga 6S LiPo bertenaga tinggi untuk vertical climb tanpa batas"
+    ]
+  },
+  {
+    "id": 6,
+    "nama": "FPV Wing Zorro",
+    "kategori": "FPV Racing",
+    "level": "Menengah",
+    "wingspan": "1000 mm",
+    "panjang": "650 mm",
+    "berat": "850 g",
+    "motor": "2207 2300KV",
+    "baterai": "4S 1500mAh",
+    "durasi": "15 menit",
+    "harga": 3250000,
+    "deskripsi": "Flying wing delta lincah yang dirancang untuk terbang rendah berkecepatan tinggi dengan dudukan kamera FPV HD dan sistem transmisi video digital.",
+    "fitur": [
+      "Bodi kompak tanpa ekor (tailless delta) dengan efisiensi aerodinamika tinggi",
+      "Bay khusus untuk kamera HD, VTX, dan flight controller GPS return-to-home",
+      "Pelindung bawah (skid plate) Kevlar untuk pendaratan di rumput lapangan",
+      "Konfigurasi motor pendorong belakang (pusher) yang melindungi baling-baling"
+    ]
+  }
+]

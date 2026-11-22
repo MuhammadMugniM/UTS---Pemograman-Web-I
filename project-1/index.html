@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyWing Aeromodelling — Komunitas & Hanggar RC Plane Bandung</title>
+  <script src="js/tailwind-browser.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/design.css" />
+</head>
+<body class="min-h-screen flex flex-col bg-[#070b12] text-slate-100 selection:bg-orange-500 selection:text-slate-950 font-sans antialiased">
+
+  <!-- Top Status Bar -->
+  <div class="bg-slate-950 border-b border-slate-800/80 text-[11px] font-mono text-slate-400 py-2.5 px-4 sm:px-8 lg:px-12">
+    <div class="max-w-[1560px] mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          AIRFIELD STATUS: CLEAR TO FLY
+        </span>
+        <span class="hidden sm:inline text-slate-600">|</span>
+        <span class="hidden sm:inline">LOC: BANDUNG AEROMODELLING SECTOR (EST. 2021)</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>FREQ: 2.4GHz FHSS / ELRS</span>
+        <span class="text-slate-600">|</span>
+        <a href="login.html" class="text-sky-400 hover:underline">PORTAL PILOT →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-50 bg-[#070b12]/95 backdrop-blur-md border-b border-slate-800/90">
+    <nav class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-orange-500 text-slate-950 flex items-center justify-center font-mono font-bold text-lg border border-orange-300 shadow-[0_0_20px_rgba(249,115,22,0.3)]">
+          SW
+        </div>
+        <div>
+          <span class="block text-lg font-display font-bold tracking-tight text-white group-hover:text-orange-400 transition-colors">
+            SkyWing Aeromodelling
+          </span>
+          <span class="block text-[11px] font-mono text-slate-400">
+            HANGGAR & KOMUNITAS RC BANDUNG
+          </span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#tentang" class="hover:text-orange-400 transition-colors">Tentang</a>
+        <a href="#layanan" class="hover:text-orange-400 transition-colors">Layanan</a>
+        <a href="#koleksi" class="hover:text-orange-400 transition-colors">Koleksi Pesawat</a>
+        <a href="#kenapa-kami" class="hover:text-orange-400 transition-colors">Kenapa Kami</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="login.html"
+          class="px-4 py-2.5 text-xs font-mono uppercase tracking-wider border border-slate-700 hover:border-sky-400 text-slate-200 hover:text-white transition-all"
+        >
+          Masuk
+        </a>
+        <a
+          href="register.html"
+          class="px-4 py-2.5 text-xs font-mono uppercase tracking-wider bg-orange-500 hover:bg-orange-400 text-slate-950 font-bold transition-all"
+        >
+          Daftar Pilot
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative min-h-[640px] flex items-center border-b border-slate-800 overflow-hidden bg-[#070b12]">
+      <!-- Background Hero -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 opacity-50"
+        style="background-image: url('images/hero-pesawat-rc.jpg');"
+        role="img"
+        aria-label="Pesawat RC SkyWing Aeromodelling di landasan"
+      ></div>
+
+      <div class="absolute inset-0 bg-gradient-to-r from-[#070b12] via-[#070b12]/80 to-[#070b12]/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#070b12] via-transparent to-[#070b12]/60"></div>
+      <div class="absolute inset-0 bg-blueprint-grid opacity-50"></div>
+
+      
+      <div class="relative z-10 max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12 py-20 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-16 items-center">
+          
+          <!-- Konten Utama Hero -->
+          <div class="lg:col-span-7 space-y-6 animate-once">
+            <div class="inline-flex items-center gap-3 px-3.5 py-1.5 bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-sky-400">
+              <span>BANDUNG RC FLIGHT DECK // SEJAK 2021</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl xl:text-6xl font-display font-bold tracking-tight text-white leading-[1.08]">
+              Terbang Lebih Tinggi, Belajar Lebih Seru
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+              Pusat komunitas dan hanggar toko pesawat remote control (RC Plane) di Bandung. Mulai dari pesawat trainer ramah pemula, warbird klasik, hingga EDF jet berkecepatan tinggi dengan kalibrasi teknisi berpengalaman.
+            </p>
+
+            <!-- Runway Indicator -->
+            <div class="pt-2 max-w-xl">
+              <div class="flex items-center gap-3 bg-slate-950/60 p-2.5 border border-slate-800/80">
+                <span class="text-[11px] font-mono text-slate-400">RWY 07L</span>
+                <div class="flex-1 border-t-2 border-dashed border-orange-500/60 relative"></div>
+                <svg class="w-6 h-6 text-orange-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                </svg>
+                <span class="text-[11px] font-mono text-sky-400">AIRBORNE</span>
+              </div>
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="pt-3 flex flex-wrap items-center gap-4">
+              <a
+                href="#koleksi"
+                class="px-6 py-3.5 bg-orange-500 hover:bg-orange-400 text-slate-950 font-mono font-bold text-sm uppercase tracking-wider transition-all shadow-[0_0_25px_rgba(249,115,22,0.35)]"
+              >
+                Eksplorasi 6 Model Pesawat →
+              </a>
+              <a
+                href="#layanan"
+                class="px-6 py-3.5 bg-slate-900/90 hover:bg-slate-800 text-white border border-slate-700 font-mono text-sm uppercase tracking-wider transition-all"
+              >
+                Lihat Kursus & Servis
+              </a>
+            </div>
+          </div>
+
+          <!-- Telemetri Hanggar -->
+          <div class="lg:col-span-5">
+            <div class="bg-slate-950/90 backdrop-blur-md border border-slate-800 p-6 sm:p-7 relative shadow-2xl">
+              <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-800">
+                <div>
+                  <h2 class="text-sm font-mono font-bold text-white tracking-wide">TELEMETRI HANGGAR SKYWING</h2>
+                  <p class="text-xs text-slate-400">Data operasional aktif komunitas Bandung</p>
+                </div>
+                <span class="px-2.5 py-1 text-[11px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                  ONLINE
+                </span>
+              </div>
+
+              <!-- Grid Telemetri -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
+                  <span class="block text-xs text-slate-400">Koleksi Hanggar</span>
+                  <strong class="mt-1 block text-2xl font-mono text-white">6 model pesawat</strong>
+                  <span class="mt-1 block text-[11px] font-mono text-orange-400">Trainer s/d 3D Aerobatic</span>
+                </div>
+                <div class="p-4 bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
+                  <span class="block text-xs text-slate-400">Dukungan Teknis</span>
+                  <strong class="mt-1 block text-2xl font-mono text-white">4 layanan</strong>
+                  <span class="mt-1 block text-[11px] font-mono text-sky-400">Kit, Kursus, Repair, Klub</span>
+                </div>
+                <div class="p-4 bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
+                  <span class="block text-xs text-slate-400">Pilot Terdaftar</span>
+                  <strong class="mt-1 block text-2xl font-mono text-white">120+ anggota komunitas</strong>
+                  <span class="mt-1 block text-[11px] font-mono text-emerald-400">Aktif terbang mingguan</span>
+                </div>
+                <div class="p-4 bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
+                  <span class="block text-xs text-slate-400">Rekor Endurance</span>
+                  <strong class="mt-1 block text-2xl font-mono text-white">25 menit</strong>
+                  <span class="mt-1 block text-[11px] font-mono text-amber-400">Durasi terbang terlama</span>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+                <span>UNIT REKOMENDASI PEMULA:</span>
+                <a href="detail.html?id=1" class="text-orange-400 hover:underline font-bold">Cessna 182 →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Tentang -->
+    <section id="tentang" class="py-20 border-b border-slate-800/80 bg-[#090e17]">
+      <div class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5">
+            <h2 class="text-3xl sm:text-4xl font-display font-bold text-white leading-tight">
+              Dibangun oleh Pilot RC Bandung Sejak 2021
+            </h2>
+            <p class="mt-3 text-sm font-mono text-orange-400">
+              SKYWING AEROMODELLING // BANDUNG, JAWA BARAT
+            </p>
+          </div>
+          <div class="lg:col-span-7 space-y-4 text-slate-300 leading-relaxed text-base">
+            <p>
+              <strong>SkyWing Aeromodelling</strong> berawal dari komunitas akhir pekan para pegiat aeromodelling di Bandung pada tahun 2021. Kami menyadari banyak pemula gagal di penerbangan perdana bukan karena kurang bakat, melainkan karena memilih pesawat yang salah dan tanpa kalibrasi Center of Gravity (CG) yang tepat.
+            </p>
+            <p>
+              Kini SkyWing menggabungkan toko spesialis RC Plane (RTF/PNP) dengan bengkel perakitan serta pelatihan lapangan bersistem <em>buddy-box</em>. Setiap unit pesawat yang keluar dari hanggar kami telah melewati inspeksi servo, uji dorong motor brushless, dan penyeimbangan propeler.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Layanan -->
+    <section id="layanan" class="py-20 border-b border-slate-800/80 bg-[#070b12]">
+      <div class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="max-w-2xl mb-12">
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+            Layanan Hanggar & Akademi Terbang
+          </h2>
+          <p class="mt-3 text-slate-400">
+            Empat pilar ekosistem SkyWing untuk memastikan Anda bisa merakit, menerbangkan, dan merawat pesawat RC dengan aman.
+          </p>
+        </div>
+
+        <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Grid Layanan -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Koleksi -->
+    <section id="koleksi" class="py-20 border-b border-slate-800/80 bg-[#090e17] bg-blueprint-grid">
+      <div class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+              Katalog Armada RC Plane
+            </h2>
+            <p class="mt-2 text-slate-400">
+              Klik pada kartu pesawat untuk melihat tabel spesifikasi lengkap dan fitur teknis.
+            </p>
+          </div>
+          <div class="font-mono text-sm text-sky-400 bg-slate-900 px-4 py-2 border border-slate-800">
+            <span id="catalog-counter">Menampilkan 6 dari 6 model</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search -->
+        <div class="bg-slate-950/95 border border-slate-800 p-6 mb-8 space-y-5">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+            <div class="md:col-span-7">
+              <label for="search-input" class="block text-xs font-mono text-slate-400 mb-1.5">
+                CARI NAMA PESAWAT
+              </label>
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Ketik nama model (mis. Cessna, Mustang, F-16, Glider)..."
+                class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-orange-500"
+              />
+            </div>
+
+            <div class="md:col-span-5">
+              <label for="sort-select" class="block text-xs font-mono text-slate-400 mb-1.5">
+                URUTKAN KATALOG
+              </label>
+              <select
+                id="sort-select"
+                class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-orange-500"
+              >
+                <option value="default">Urutan Rekomendasi Hanggar</option>
+                <option value="termurah">Harga: Termurah ke Termahal</option>
+                <option value="termahal">Harga: Termahal ke Termurah</option>
+                <option value="nama">Nama: A ke Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <span class="block text-xs font-mono text-slate-400 mb-2">
+              FILTER KATEGORI AIRFRAME
+            </span>
+            <div id="category-chips" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+        <!-- Empty State -->
+        <div
+          id="empty-state"
+          class="hidden bg-slate-950 border border-slate-800 p-12 text-center my-6"
+        >
+          <p class="font-mono text-orange-400 text-sm mb-2">RADAR CONTACT LOST // 0 MODEL DITEMUKAN</p>
+          <h3 class="text-xl font-bold text-white">
+            Tidak ada model pesawat yang cocok dengan pencarian atau filter Anda.
+          </h3>
+          <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto">
+            Coba gunakan kata kunci lain atau kembalikan filter kategori ke "Semua".
+          </p>
+          <button
+            id="reset-filter-btn"
+            type="button"
+            class="mt-5 px-5 py-2.5 bg-orange-500 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider cursor-pointer"
+          >
+            Reset Semua Filter
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Kenapa Kami -->
+    <section id="kenapa-kami" class="py-20 bg-[#070b12]">
+      <div class="max-w-[1560px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="max-w-2xl mb-12">
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+            Kenapa Memilih SkyWing Aeromodelling?
+          </h2>
+          <p class="mt-2 text-slate-400">
+            Standar kualitas bengkel dan pendampingan lapangan yang membedakan kami dari toko daring biasa.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-orange-400">01 // PRE-FLIGHT BENCH TEST</span>
+              <h3 class="mt-2 text-xl font-bold text-white">Inspeksi 12 Titik Sebelum Kirim</h3>
+              <p class="mt-2 text-sm text-slate-400 leading-relaxed">
+                Setiap unit melewati pengujian arah servo, kalibrasi throttle ESC, serta pengecekan struktur sayap sehingga siap dirakit tanpa kendala teknis.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-sky-400">02 // BUDDY-BOX TRAINING</span>
+              <h3 class="mt-2 text-xl font-bold text-white">Pendampingan Terbang Perdana</h3>
+              <p class="mt-2 text-sm text-slate-400 leading-relaxed">
+                Beli unit Trainer di SkyWing dan dapatkan sesi maiden flight gratis didampingi instruktur kami menggunakan sistem dual-remote anti-crash.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <span class="font-mono text-xs text-emerald-400">03 // SPARE PART & REPAIR</span>
+              <h3 class="mt-2 text-xl font-bold text-white">Ketersediaan Suku Cadang Lokal</h3>
+              <p class="mt-2 text-sm text-slate-400 leading-relaxed">
+                Mulai dari baling-baling cadangan, motor brushless, servo metal gear, hingga baterai LiPo selalu tersedia di hanggar Bandung kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 px-4 sm:px-8 lg:px-12">
+    <div class="max-w-[1560px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="flex items-center gap-2 font-mono">
+        <span class="w-2 h-2 bg-orange-500"></span>
+        <span>SkyWing Aeromodelling — Bandung</span>
+      </div>
+      <p class="font-mono text-slate-300 text-center">
+        @Copyright by 24552011240_Muhammad Mugni Mahbub_TIF RP 24E CNS
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
