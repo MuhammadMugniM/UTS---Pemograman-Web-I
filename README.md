@@ -54,17 +54,15 @@ Gunakan akun berikut pada halaman `login.html` (tersedia juga tombol **Isi Otoma
 
 ## Skenario & Tabel Verifikasi Tes API
 
-> Catatan: Tabel di bawah ini merupakan matriks skenario pengujian standar untuk diverifikasi langsung menggunakan Postman / Thunder Client / cURL saat server dijalankan di mesin lokal.
+> Catatan: Tabel di bawah ini merupakan matriks skenario pengujian standar untuk diverifikasi langsung menggunakan Bruno saat server dijalankan di mesin lokal.
 
 | Skenario Tes | Method & Endpoint | Body Payload | Expected Status | Expected Response |
 |--------------|-------------------|--------------|-----------------|-------------------|
 | Ambil semua produk | `GET /api/products` | - | `200 OK` | `{ "success": true, "data": [ ...6 produk ] }` |
 | Ambil produk ID 3 | `GET /api/products/3` | - | `200 OK` | `{ "success": true, "data": { "id": 3, "nama": "F-16 Fighting Falcon EDF Jet", ... } }` |
-| Ambil ID tidak valid | `GET /api/products/999` | - | `404 Not Found` | `{ "success": false, "message": "Produk dengan id 999 tidak ditemukan" }` |
-| Tambah produk valid | `POST /api/products` | `{ "nama": "SkyCub Bush Plane", "harga": "Rp2.750.000" }` | `201 Created` | `{ "success": true, "data": { "id": 7, ... } }` |
-| Ubah produk ID 2 | `PUT /api/products/2` | `{ "nama": "P-51 Mustang Warbird V2", "harga": 3950000 }` | `200 OK` | `{ "success": true, "data": { "id": 2, ... } }` |
-| Hapus produk ID 7 | `DELETE /api/products/7` | - | `200 OK` | `{ "success": true, "message": "Produk ... berhasil dihapus" }` |
-| Tambah produk invalid | `POST /api/products` | `{ "nama": "", "harga": "" }` | `400 Bad Request` | `{ "success": false, "message": "Field nama dan harga wajib diisi" }` |
+| Tambah produk baru | `POST /api/products` | `{ "nama": "SkyCub Bush Plane", "harga": 2750000, ... }` | `201 Created` | `{ "success": true, "data": { "id": 7, ... } }` |
+| Ubah produk ID 7 | `PUT /api/products/7` | `{ "nama": "SkyCub Bush Plane V2", "harga": 2850000, "durasi": "16 menit" }` | `200 OK` | `{ "success": true, "data": { "id": 7, ... } }` |
+| Hapus produk ID 7 | `DELETE /api/products/7` | - | `200 OK` | `{ "success": true, "message": "Produk SkyCub Bush Plane V2 berhasil dihapus", ... }` |
 
 ---
 
@@ -72,38 +70,38 @@ Gunakan akun berikut pada halaman `login.html` (tersedia juga tombol **Isi Otoma
 
 ### A. Project 1 — Frontend Web SkyWing Aeromodelling
 
- 1. Halaman Utama (`index.html`)
+1. Halaman Utama (`index.html`)
 ![Halaman Utama](screenshots/index.png)
 
- 2. Halaman Detail Informasi (`detail.html?id=3`)
+2. Halaman Detail Informasi (`detail.html?id=5`)
 ![Halaman Detail](screenshots/detail.png)
 
- 3. Halaman Login (`login.html`)
+3. Halaman Login (`login.html`)
 ![Halaman Login](screenshots/login.png)
 
 4. Halaman Registrasi (`register.html`)
 ![Halaman Registrasi](screenshots/register.png)
 
- 5. Halaman Menu Utama / Dashboard (`dashboard.html`)
+5. Halaman Menu Utama / Dashboard (`dashboard.html`)
 ![Halaman Dashboard](screenshots/dashboard.png)
 
 ---
 
 ### B. Project 2 — Pengujian CRUD API di Bruno
 
- 1. GET All Products (`GET /api/products`)
+1. GET All Products (`GET /api/products`)
 ![GET All Products](screenshots/bruno-get-all.png)
 
- 2. GET Product by ID (`GET /api/products/3`)
+2. GET Product by ID (`GET /api/products/3`)
 ![GET Product by ID](screenshots/bruno-get-id.png)
 
- 3. POST Create Product (`POST /api/products`)
+3. POST Create Product (`POST /api/products`)
 ![POST Create Product](screenshots/bruno-post.png)
 
- 4. PUT Update Product (`PUT /api/products/7`)
+4. PUT Update Product (`PUT /api/products/7`)
 ![PUT Update Product](screenshots/bruno-put.png)
 
- 5. DELETE Product (`DELETE /api/products/7`)
+5. DELETE Product (`DELETE /api/products/7`)
 ![DELETE Product](screenshots/bruno-delete.png)
 
 ---
