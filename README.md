@@ -29,6 +29,8 @@
    ```
 4. Server akan aktif di `http://localhost:3000`.
 
+![npm install dan npm start](screenshots/Screenshot%202026-11-22%20155348.png)
+
 ---
 
 ## Akun Demo (Project 1)
@@ -54,10 +56,10 @@ Gunakan akun berikut pada halaman `login.html` (tersedia juga tombol **Isi Otoma
 
 ## Skenario & Tabel Verifikasi Tes API
 
-> Catatan: Tabel di bawah ini merupakan matriks skenario pengujian standar untuk diverifikasi langsung menggunakan Bruno saat server dijalankan di mesin lokal.
+> Seluruh pengujian dilakukan menggunakan **Bruno**. Hasil aktual pada setiap skenario sesuai dengan screenshot di bagian Dokumentasi Screenshot Project 2.
 
-| Skenario Tes | Method & Endpoint | Body Payload | Expected Status | Expected Response |
-|--------------|-------------------|--------------|-----------------|-------------------|
+| Skenario Tes | Method & Endpoint | Body Payload | Status Aktual | Response Aktual |
+|--------------|-------------------|--------------|---------------|-----------------|
 | Ambil semua produk | `GET /api/products` | - | `200 OK` | `{ "success": true, "data": [ ...6 produk ] }` |
 | Ambil produk ID 3 | `GET /api/products/3` | - | `200 OK` | `{ "success": true, "data": { "id": 3, "nama": "F-16 Fighting Falcon EDF Jet", ... } }` |
 | Tambah produk baru | `POST /api/products` | `{ "nama": "SkyCub Bush Plane", "harga": 2750000, ... }` | `201 Created` | `{ "success": true, "data": { "id": 7, ... } }` |
@@ -112,24 +114,13 @@ Gunakan akun berikut pada halaman `login.html` (tersedia juga tombol **Isi Otoma
 
 ---
 
-## Catatan Arsitektur Teknis
+## Struktur Teknis Project
 
-Catatan arsitektur dan optimasi project:
-
-- **Tailwind lokal**: `project-1/js/tailwind-browser.js` (di-vendor, bukan
-  CDN) — halaman tetap tampil penuh saat offline.
-- **Gambar lokal bernama jelas**: `project-1/images/` — 6 foto produk +
-  1 foto hero. Lihat `project-1/images/README.md` untuk tabel produk →
-  nama file dan cara menggantinya. Foto hero memakai foto yang sama dengan
-  Cessna 182 (sesuai aslinya).
-- **Harga API jadi number**: `project-2/data/products.json` kini memakai
-  `2450000` dst (bukan string `"Rp2.450.000"`), sama seperti `data.js`.
-  Tampilan harga di website tidak berubah (tetap `Rp2.450.000`).
-- **Kode diringkas tanpa memangkas fitur**: blok `<style>` yang sama di
-  5 halaman diekstrak ke `project-1/css/design.css`; inline `<script>` di
-  tiap halaman dipindah ke `project-1/js/` (`index.js`, `detail.js`,
-  `dashboard.js`, `login.js`, `register.js`); template kartu produk
-  "Pesawat lain yang mirip" di detail kini memakai ulang template kartu
-  katalog dari `js/filter.js` (`productCardHTML`).
-- Google Fonts masih dimuat dari internet, dengan fallback font sistem
-  kalau offline — tampilan tetap rapi tanpa font tersebut.
+| Komponen | Lokasi | Keterangan |
+|----------|--------|------------|
+| Tailwind CSS v4 | `project-1/js/tailwind-browser.js` | Build browser lokal (bukan CDN), halaman tetap tampil penuh saat offline |
+| Gambar produk | `project-1/images/` | 6 foto produk + 1 foto hero, disimpan lokal. Lihat `project-1/images/README.md` untuk pemetaan nama file |
+| CSS tambahan | `project-1/css/design.css` | Styling bersama yang dipakai di semua halaman |
+| JavaScript per halaman | `project-1/js/` | `index.js`, `detail.js`, `dashboard.js`, `login.js`, `register.js`, `filter.js`, `auth.js`, `data.js` |
+| Data API | `project-2/data/products.json` | 6 produk dengan harga bertipe number (`2450000`), identik dengan `data.js` di Project 1 |
+| Font | Google Fonts (online) | Fallback ke font sistem saat offline — tampilan tetap rapi |
